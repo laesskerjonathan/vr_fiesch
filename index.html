@@ -12,20 +12,21 @@
         <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
 
-        <a-marker type='barcode' value='7'>
-            <a-box position='0 0.5 0' color="yellow"></a-box>
-        </a-marker>
+			<a-marker type='barcode' value='7'>
+				<a-box position='0 0 0' color="yellow"></a-box>
+			</a-marker>
 
-        <a-marker id="animated-marker" type='barcode' value='6'>
+			<a-marker id="animated-marker" type='barcode' value='6'>
 
-			<a-entity 
-				obj-model="obj: url(https://laesskerjonathan.github.io/vr_fiesch/Fiesch_Final.obj); 
-				mtl: url(https://laesskerjonathan.github.io/vr_fiesch/Fiesch_Final.mtl)"
-				scale="0.003 0.003 0.003">
-			</a-entity>
-        </a-marker>
+				<a-entity 
+					obj-model="obj: url(https://laesskerjonathan.github.io/vr_fiesch/Fiesch_Final.obj); 
+					mtl: url(https://laesskerjonathan.github.io/vr_fiesch/Fiesch_Final.mtl)"
+					scale="0.014 0.014 0.014"
+					position="1.2 0 0">
+				</a-entity>
+			</a-marker>
 
-        <a-entity camera></a-entity>
+			<a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
